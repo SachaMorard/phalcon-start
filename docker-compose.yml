@@ -1,0 +1,61 @@
+version: '2'
+
+services:
+
+  nginx:
+    image: nginx:latest
+    volumes:
+      - ./:/home/www/phalcon-start:rw
+      - ./docker/containers/nginx/local.phalcon-start.com.conf:/etc/nginx/conf.d/local.phalcon-start.com.conf:rw
+      - ./docker/containers/ssl:/etc/nginx/ssl:ro
+    links:
+      - php
+    ports:
+      - 80:80
+      - 443:443
+    networks:
+      - front-tier
+      - back-tier
+
+  php:
+    build: ./docker/containers/php/
+    volumes:
+      - ./:/home/www/phalcon-start:rw
+      - ./docker/containers/php/etc/php/7.0/mods-available/xdebug.ini:/etc/php/7.0/mods-available/xdebug.ini
+    working_dir: /home/www/phalcon-start
+    links:
+      - mysql
+    expose:
+      - 9000
+    environment:
+        XDEBUG_CONFIG: remote_host=192.168.1.31
+        PHP_IDE_CONFIG: "serverName=localhost"
+    networks:
+      - front-tier
+      - back-tier
+
+  mysql:
+    image: mysql:5.7
+    volumes:
+      - ./docker/data/mysql:/var/lib/mysql:rw
+    environment:
+      MYSQL_DATABASE: phalcon-start
+      MYSQL_USER: phalcon-start
+      MYSQL_PASSWORD: phalcon-start
+      MYSQL_ROOT_PASSWORD: phalcon-start
+    ports:
+      - 3306:3306
+    networks:
+      - back-tier
+
+
+networks:
+  front-tier:
+    driver: bridge
+  back-tier:
+    driver: bridge
+
+volumes:
+  nginx:
+  php:
+  mysql:
