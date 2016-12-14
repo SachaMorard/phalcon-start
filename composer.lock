@@ -4,9 +4,47 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "3c8e51ebac7a519b794b8b314939671e",
-    "content-hash": "ddedc2b613207c29e6e31742b33749f0",
+    "hash": "e220bd6a67ed558e331a20ac9fe2a167",
+    "content-hash": "f37bea090042905be2902e563294561f",
     "packages": [
+        {
+            "name": "sachoo/phalcon-model-annotations",
+            "version": "V1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/SachaMorard/phalcon-model-annotations.git",
+                "reference": "1c1b4349d789240ca822c9170be51f3b46830462"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/SachaMorard/phalcon-model-annotations/zipball/1c1b4349d789240ca822c9170be51f3b46830462",
+                "reference": "1c1b4349d789240ca822c9170be51f3b46830462",
+                "shasum": ""
+            },
+            "require": {
+                "ext-phalcon": "^3.0",
+                "php": ">=5.5"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Phalcon\\": [
+                        "Library/Phalcon/"
+                    ]
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Annotations handler for phalcon models",
+            "keywords": [
+                "annotation",
+                "model",
+                "phalcon"
+            ],
+            "time": "2016-12-09 16:19:17"
+        },
         {
             "name": "swiftmailer/swiftmailer",
             "version": "v5.4.4",
@@ -223,6 +261,62 @@
                 "unit testing"
             ],
             "time": "2014-06-21 01:03:08"
+        },
+        {
+            "name": "danielcosta/phalcon-stub",
+            "version": "3.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/danielcosta/phalcon-stub.git",
+                "reference": "7a349915b49e52e96e927016e2e0b3d08f447e4d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/danielcosta/phalcon-stub/zipball/7a349915b49e52e96e927016e2e0b3d08f447e4d",
+                "reference": "7a349915b49e52e96e927016e2e0b3d08f447e4d",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Phalcon\\": "Phalcon"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Contributors",
+                    "homepage": "https://github.com/phalcon/phalcon-devtools/graphs/contributors"
+                },
+                {
+                    "name": "Phalcon Team",
+                    "email": "team@phalconphp.com",
+                    "homepage": "http://phalconphp.com/en/team"
+                },
+                {
+                    "name": "Daniel Costa",
+                    "email": "danielcosta@gmail.com",
+                    "homepage": "http://danielcosta.info"
+                }
+            ],
+            "description": "The most complete Phalcon PHP stubs which allows autocomplete in modern IDEs",
+            "keywords": [
+                "Eclipse",
+                "Zend Studio",
+                "autocomplete",
+                "ide",
+                "netbeans",
+                "phalcon",
+                "phpstorm",
+                "stub"
+            ],
+            "time": "2016-12-02 19:02:27"
         },
         {
             "name": "doctrine/annotations",
@@ -775,126 +869,6 @@
                 "php"
             ],
             "time": "2016-09-16 12:04:44"
-        },
-        {
-            "name": "phalcon/devtools",
-            "version": "v3.0.3",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/phalcon/phalcon-devtools.git",
-                "reference": "1c112a6922f87d6e8375e03f7a639ed51f0fe09f"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/phalcon/phalcon-devtools/zipball/1c112a6922f87d6e8375e03f7a639ed51f0fe09f",
-                "reference": "1c112a6922f87d6e8375e03f7a639ed51f0fe09f",
-                "shasum": ""
-            },
-            "require": {
-                "ext-phalcon": "^3.0",
-                "php": ">=5.5"
-            },
-            "require-dev": {
-                "kherge/box": "^2.7"
-            },
-            "bin": [
-                "phalcon.php"
-            ],
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Phalcon\\": "scripts/Phalcon/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "authors": [
-                {
-                    "name": "Phalcon Team",
-                    "email": "team@phalconphp.com",
-                    "homepage": "https://phalconphp.com/en/team"
-                },
-                {
-                    "name": "Contributors",
-                    "homepage": "https://github.com/phalcon/phalcon-devtools/graphs/contributors"
-                }
-            ],
-            "description": "This tools provide you useful scripts to generate code helping to develop faster and easy applications that use with Phalcon framework.",
-            "homepage": "https://phalconphp.com",
-            "keywords": [
-                "Devtools",
-                "framework",
-                "phalcon",
-                "phar",
-                "webtools"
-            ],
-            "time": "2016-12-02 18:52:26"
-        },
-        {
-            "name": "phalcon/incubator",
-            "version": "v3.0.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/phalcon/incubator.git",
-                "reference": "e35352e27fb25521686da4acc82bbffa208c206b"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/phalcon/incubator/zipball/e35352e27fb25521686da4acc82bbffa208c206b",
-                "reference": "e35352e27fb25521686da4acc82bbffa208c206b",
-                "shasum": ""
-            },
-            "require": {
-                "ext-phalcon": "^3.0",
-                "php": ">=5.5",
-                "swiftmailer/swiftmailer": "~5.2"
-            },
-            "require-dev": {
-                "codeception/aerospike-module": "~1.0",
-                "codeception/codeception": "~2.2",
-                "codeception/mockery-module": "~0.2",
-                "codeception/specify": "~0.4",
-                "codeception/verify": "~0.3",
-                "phpdocumentor/reflection-docblock": "^2.0.4",
-                "phpunit/phpunit": "4.8.*",
-                "squizlabs/php_codesniffer": "~2.6"
-            },
-            "suggest": {
-                "duncan3dc/fork-helper": "To use extended class to access the beanstalk queue service",
-                "ext-aerospike": "*",
-                "sergeyklay/aerospike-php-stubs": "The most complete Aerospike PHP stubs which allows autocomplete in modern IDEs"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Phalcon\\": "Library/Phalcon/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "authors": [
-                {
-                    "name": "Phalcon Team",
-                    "email": "team@phalconphp.com",
-                    "homepage": "http://phalconphp.com/en/team"
-                },
-                {
-                    "name": "Contributors",
-                    "homepage": "https://github.com/phalcon/incubator/graphs/contributors"
-                }
-            ],
-            "description": "Adapters, prototypes or functionality that can be potentially incorporated to the C-framework.",
-            "homepage": "http://phalconphp.com",
-            "keywords": [
-                "framework",
-                "incubator",
-                "phalcon"
-            ],
-            "time": "2016-11-27 11:58:38"
         },
         {
             "name": "phpdocumentor/reflection-common",
@@ -1522,44 +1496,6 @@
                 "psr-3"
             ],
             "time": "2016-10-10 12:19:37"
-        },
-        {
-            "name": "sachoo/phalcon-model-annotations",
-            "version": "V1.0.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/SachaMorard/phalcon-model-annotations.git",
-                "reference": "1c1b4349d789240ca822c9170be51f3b46830462"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/SachaMorard/phalcon-model-annotations/zipball/1c1b4349d789240ca822c9170be51f3b46830462",
-                "reference": "1c1b4349d789240ca822c9170be51f3b46830462",
-                "shasum": ""
-            },
-            "require": {
-                "ext-phalcon": "^3.0",
-                "php": ">=5.5"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Phalcon\\": [
-                        "Library/Phalcon/"
-                    ]
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "description": "Annotations handler for phalcon models",
-            "keywords": [
-                "annotation",
-                "model",
-                "phalcon"
-            ],
-            "time": "2016-12-09 16:19:17"
         },
         {
             "name": "sebastian/comparator",
@@ -2493,7 +2429,8 @@
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
-        "php": ">=7"
+        "php": ">=7",
+        "ext-phalcon": "^3.0"
     },
     "platform-dev": []
 }

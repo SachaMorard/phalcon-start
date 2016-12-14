@@ -19,8 +19,7 @@ class Module implements ModuleDefinitionInterface
         $loader = new Loader();
 
         $loader->registerNamespaces([
-            'PhalconStart\Modules\Frontend\Controllers' => __DIR__ . '/controllers/',
-            'PhalconStart\Modules\Frontend\Models' => __DIR__ . '/models/',
+            'PhalconStart\Modules\Frontend\Controllers' => __DIR__ . '/controllers/'
         ]);
 
         $loader->register();
