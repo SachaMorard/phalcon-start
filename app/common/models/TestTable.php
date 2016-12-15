@@ -1,11 +1,11 @@
 <?php
-namespace PhalconStart\Models;
+namespace Models;
 
 /**
  * Class TestTable
  * @package PhalconStart\Models
  *
- * @Source('mysql', 'testTable')
+ * @Source('dbMysql', 'testTable')
  */
 class TestTable extends \Phalcon\Mvc\Model
 {

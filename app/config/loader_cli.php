@@ -8,12 +8,11 @@ $loader = new Loader();
  * Register Namespaces
  */
 $loader->registerNamespaces([
-    'PhalconStart\Models' => APP_PATH . '/common/models/',
-    'PhalconStart'        => APP_PATH . '/common/library/',
-    'Phalcon'             => BASE_PATH . '/cli/Phalcon/'
+    'Models' => APP_PATH . '/common/models/',
+    'Migrations' => APP_PATH . '/cli/migrations/',
+    'Commands' => APP_PATH . '/cli/commands/',
+    'PhalconStart'        => APP_PATH . '/common/library/'
 ]);
-
-$loader->registerDirs([BASE_PATH . '/cli/']);
 
 /**
  * Register module classes

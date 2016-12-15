@@ -1,7 +1,6 @@
 /node_modules
 /var/tmp
 /components
-.phalcon
 /docker/data/*
 /composer.phar
 pid

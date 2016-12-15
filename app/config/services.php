@@ -13,28 +13,20 @@ $di->setShared('config', function () {
 /**
  * Database connection is created based in the parameters defined in the configuration file
  */
-$di->setShared('mysql', function () {
+$di->setShared('dbMysql', function () {
     $config = $this->getConfig();
-
-    $class = 'Phalcon\Db\Adapter\Pdo\\' . $config->database->adapter;
     $params = [
-        'host'     => $config->database->host,
-        'username' => $config->database->username,
-        'password' => $config->database->password,
-        'dbname'   => $config->database->dbname,
-        'charset'  => $config->database->charset
+        'host'     => $config->mysql->host,
+        'username' => $config->mysql->username,
+        'password' => $config->mysql->password,
+        'dbname'   => $config->mysql->dbname,
+        'charset'  => $config->mysql->charset
     ];
-
-    if ($config->database->adapter == 'Postgresql') {
-        unset($params['charset']);
-    }
-
     try{
-        $connection = new $class($params);
+        $connection = new \Phalcon\Db\Adapter\Pdo\Mysql($params);
     }catch(\Exception $e){
-        $connection = new $class($params);
+        $connection = new \Phalcon\Db\Adapter\Pdo\Mysql($params);
     }
-
     return $connection;
 });
 

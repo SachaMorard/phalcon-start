@@ -8,7 +8,7 @@ $loader = new Loader();
  * Register Namespaces
  */
 $loader->registerNamespaces([
-    'PhalconStart\Models' => APP_PATH . '/common/models/',
+    'Models' => APP_PATH . '/common/models/',
     'PhalconStart'        => APP_PATH . '/common/library/',
 ]);
 
