@@ -4,9 +4,64 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "cbb3b9e6ed104c045af9b688c2be0402",
-    "content-hash": "f37bea090042905be2902e563294561f",
+    "hash": "7b84dd97872feeced2b1a592acaaf82f",
+    "content-hash": "07757e94fe5be9905e1a12d75426be72",
     "packages": [
+        {
+            "name": "sachoo/phalcon-console",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/SachaMorard/phalcon-console.git",
+                "reference": "669095aac25ebeb10fd588ab09a3b00c553411cd"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/SachaMorard/phalcon-console/zipball/669095aac25ebeb10fd588ab09a3b00c553411cd",
+                "reference": "669095aac25ebeb10fd588ab09a3b00c553411cd",
+                "shasum": ""
+            },
+            "require": {
+                "ext-phalcon": "^3.0",
+                "php": ">=5.5",
+                "sachoo/phalcon-model-annotations": "1.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Phalcon\\": "Library/Phalcon/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Contributors",
+                    "homepage": "https://github.com/phalcon/phalcon-devtools/graphs/contributors"
+                },
+                {
+                    "name": "Phalcon Team",
+                    "email": "team@phalconphp.com",
+                    "homepage": "http://phalconphp.com/en/team"
+                },
+                {
+                    "name": "Sacha Morard",
+                    "email": "sachamorard@gmail.com"
+                }
+            ],
+            "description": "Based on phalcon devtools, this tools provide a console component with powerfull migration system for Mysql and Cassandra",
+            "keywords": [
+                "cli",
+                "command",
+                "console",
+                "framework",
+                "migration",
+                "phalcon"
+            ],
+            "time": "2016-12-15 16:46:47"
+        },
         {
             "name": "sachoo/phalcon-model-annotations",
             "version": "V1.0.0",
@@ -2424,7 +2479,8 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "swiftmailer/swiftmailer": 0
+        "swiftmailer/swiftmailer": 0,
+        "sachoo/phalcon-console": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,

@@ -10,8 +10,6 @@ class IndexController extends ControllerBase
 
     public function indexAction()
     {
-        $dispatcher = new CliDispatcher();
-        var_dump($dispatcher);
     }
 
 }
