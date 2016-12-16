@@ -4,26 +4,27 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "7b84dd97872feeced2b1a592acaaf82f",
-    "content-hash": "07757e94fe5be9905e1a12d75426be72",
+    "hash": "ce3e332980c7b2ef5bbe85ea2fe7074a",
+    "content-hash": "2cdaffb2e6397b20d545d4742ca28b4c",
     "packages": [
         {
             "name": "sachoo/phalcon-console",
-            "version": "dev-master",
+            "version": "v1.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/SachaMorard/phalcon-console.git",
-                "reference": "669095aac25ebeb10fd588ab09a3b00c553411cd"
+                "reference": "d67e0d447b6b423b0ee7159a9b7157ffc8627991"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/SachaMorard/phalcon-console/zipball/669095aac25ebeb10fd588ab09a3b00c553411cd",
-                "reference": "669095aac25ebeb10fd588ab09a3b00c553411cd",
+                "url": "https://api.github.com/repos/SachaMorard/phalcon-console/zipball/d67e0d447b6b423b0ee7159a9b7157ffc8627991",
+                "reference": "d67e0d447b6b423b0ee7159a9b7157ffc8627991",
                 "shasum": ""
             },
             "require": {
                 "ext-phalcon": "^3.0",
                 "php": ">=5.5",
+                "sachoo/phalcon-console-migration": "1.*",
                 "sachoo/phalcon-model-annotations": "1.*"
             },
             "type": "library",
@@ -60,7 +61,54 @@
                 "migration",
                 "phalcon"
             ],
-            "time": "2016-12-15 16:46:47"
+            "time": "2016-12-16 09:08:02"
+        },
+        {
+            "name": "sachoo/phalcon-console-migration",
+            "version": "v1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/SachaMorard/phalcon-console-migration.git",
+                "reference": "9c98a66f12c06a944f013e38dd4ac3843dc9fe3c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/SachaMorard/phalcon-console-migration/zipball/9c98a66f12c06a944f013e38dd4ac3843dc9fe3c",
+                "reference": "9c98a66f12c06a944f013e38dd4ac3843dc9fe3c",
+                "shasum": ""
+            },
+            "require": {
+                "ext-phalcon": "^3.0",
+                "php": ">=5.5",
+                "sachoo/phalcon-console": "1.*",
+                "sachoo/phalcon-model-annotations": "1.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Phalcon\\": "Library/Phalcon/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Sacha Morard",
+                    "email": "sachamorard@gmail.com"
+                }
+            ],
+            "description": "Based on sachoo/phalcon-console, this component handle databases migrations (up, down, diff, status, run)",
+            "keywords": [
+                "cli",
+                "command",
+                "console",
+                "framework",
+                "migration",
+                "phalcon"
+            ],
+            "time": "2016-12-16 09:15:47"
         },
         {
             "name": "sachoo/phalcon-model-annotations",
@@ -68,12 +116,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/SachaMorard/phalcon-model-annotations.git",
-                "reference": "1c1b4349d789240ca822c9170be51f3b46830462"
+                "reference": "d06bc43fb5b8ce29ffed4ab0af46ee080a7bddcd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/SachaMorard/phalcon-model-annotations/zipball/1c1b4349d789240ca822c9170be51f3b46830462",
-                "reference": "1c1b4349d789240ca822c9170be51f3b46830462",
+                "url": "https://api.github.com/repos/SachaMorard/phalcon-model-annotations/zipball/d06bc43fb5b8ce29ffed4ab0af46ee080a7bddcd",
+                "reference": "d06bc43fb5b8ce29ffed4ab0af46ee080a7bddcd",
                 "shasum": ""
             },
             "require": {
@@ -2479,8 +2527,7 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "swiftmailer/swiftmailer": 0,
-        "sachoo/phalcon-console": 20
+        "swiftmailer/swiftmailer": 0
     },
     "prefer-stable": false,
     "prefer-lowest": false,

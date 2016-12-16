@@ -36,6 +36,15 @@ return new \Phalcon\Config([
         'debug' => true
     ],
 
+
+    'commandsToEnable' => [
+        \Phalcon\Commands\Builtin\Info::class,
+        \Phalcon\Commands\Builtin\Enumerate::class,
+        \Phalcon\Commands\Builtin\Migration::class,
+        \Phalcon\Commands\Builtin\ClearCache::class,
+        \Commands\MyCommand::class
+    ],
+
     /**
      * if true, then we print a new line at the end of each CLI execution
      *

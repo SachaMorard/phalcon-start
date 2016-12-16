@@ -7,8 +7,7 @@
         "php": ">=7",
         "ext-phalcon": "^3.0",
         "swiftmailer/swiftmailer": "@stable",
-        "sachoo/phalcon-model-annotations": "1.*",
-        "sachoo/phalcon-console": "dev-master"
+        "sachoo/phalcon-console": "1.*"
     },
     "require-dev": {
         "codeception/codeception": "2.*",
