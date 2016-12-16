@@ -112,7 +112,7 @@
         },
         {
             "name": "sachoo/phalcon-model-annotations",
-            "version": "V1.0.0",
+            "version": "v1.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/SachaMorard/phalcon-model-annotations.git",
@@ -140,13 +140,13 @@
             "license": [
                 "MIT"
             ],
-            "description": "Annotations handler for phalcon models",
+            "description": "Annotations handler for phalcon models. Allow to add foreign keys with annotation in models and manage many models with different databases (mysql, postgresql, cassandra, sqlite)",
             "keywords": [
                 "annotation",
                 "model",
                 "phalcon"
             ],
-            "time": "2016-12-09 16:19:17"
+            "time": "2016-12-16 09:12:30"
         },
         {
             "name": "swiftmailer/swiftmailer",
