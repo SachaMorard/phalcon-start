@@ -11,7 +11,7 @@ MYSQL=docker-compose exec mysql
 all: php
 
 up:
-	docker-compose up
+	docker-compose up -d
 
 restart: stop up
 
