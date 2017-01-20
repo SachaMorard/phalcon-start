@@ -40,3 +40,7 @@ Thumbs.db
 /.settings
 /.idea
 .idea
+
+tests/_output/*
+tests/_output/*
+tests/_output/*
